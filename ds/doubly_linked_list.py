@@ -66,7 +66,9 @@ class DoublyLinkedList:
     def delete_at_beginning(self):
         self.head = self.head.next
         self.head.prev = None
+        return self
     
     def delete_at_end(self):
         self.tail = self.tail.prev
         self.tail.next = None
+        return self
