@@ -9,13 +9,13 @@ class BST:
         while True:
             if value < current.value:
                 if current.left is None:
-                    current.value = node
+                    current.left = node
                     break
                 else:
                     current = current.left
             else:
                 if current.right is None:
-                    current.value = node
+                    current.right = node
                     break
                 else:
                     current = current.right
