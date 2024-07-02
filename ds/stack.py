@@ -53,5 +53,3 @@ if __name__ == "__main__":
     value = stack.pop()
     print(value)
     stack.list()
-
-
