@@ -2,7 +2,7 @@
 In many problems dealing with an array (or a LinkedList), we are asked to find or calculate something among all the contiguous subarrays (or sublists) of a given size.
 
 ## Problems
--  Find Averages of Sub Arrays (done)
+- Find Averages of Sub Arrays (done)
 - Maximum Sum Subarray of Size K (done)
 - Smallest Subarray with a given sum (done)
 - Longest Substring with K Distinct Characters (done)
