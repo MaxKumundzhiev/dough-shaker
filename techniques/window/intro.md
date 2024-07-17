@@ -9,8 +9,8 @@ In many problems dealing with an array (or a LinkedList), we are asked to find o
 - Fruits into Baskets (done)
 - Longest Substring with at most 2 distinct characters (done)
 - No-repeat Substring (done)
-- Longest Substring with Same Letters after Replacement
-- Longest Subarray with Ones after Replacement
+- Longest Substring with Same Letters after Replacement (done)
+- Longest Subarray with Ones after Replacement (done)
 - Permutation in a String
 - String Anagrams
 - Smallest Window containing Substring
