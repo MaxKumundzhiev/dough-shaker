@@ -114,3 +114,18 @@ def findMaxAverage(self, nums: List[int], k: int) -> float:
                     average = max(current, average)
                 sum_ -= nums[left]
                 left += 1
+
+
+def foo(array: List[int], size:int) -> int:
+    window_start, max_, window_sum_ = 0, float("-inf"), 0
+    
+    for window_end in range(len(array)):
+        if window_end > size - 1:
+            window_sum_ -= array[window_start]
+            window_start += 1
+    
+        window_sum_ += array[window_end]
+        max_ = max(max_, window_sum_)
+    return max_
+
+assert foo(array=[1, 2, 3, 4], size=3) == 9
