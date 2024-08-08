@@ -30,3 +30,12 @@ def max_visitors_online(
         max_online = max(online, max_online)
 
     return max_online
+
+
+visitors = 10
+start_times = ["07:30", "12:00", "15:30", "09:00", "11:15", "14:00", "16:45", "08:15", "10:30", "13:45"]
+end_times = ["09:15", "13:45", "17:15", "10:30", "12:45", "15:30", "18:15", "09:45", "12:00", "15:15"]
+
+max_visitors_online(
+    visitors=visitors, time_in=start_times, time_out=end_times
+)
