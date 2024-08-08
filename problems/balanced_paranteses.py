@@ -29,3 +29,32 @@ def foo(sequence: List[str]) -> bool:
 
 assert foo(sequence="(())") == True
 assert foo(sequence="())") == False
+
+
+##### Various types of brackets
+def foo(sequence: str):
+    stack = []
+    mapping = {
+        "(": ")",
+        "[": "]",
+        "{": "}"
+    }
+
+    for idx, element in enumerate(sequence, 1):
+        if element in mapping.keys():
+            stack.append(element)
+        elif bool(stack) is False:
+            return idx
+        else:
+            last = stack[-1]
+            expected = mapping.get(last)
+
+            if element != expected:
+                return idx
+            else:
+                stack.pop()
+
+    return "Success" if bool(stack) is False else idx
+
+
+print(foo(sequence="([](){([])})"))
