@@ -1,5 +1,8 @@
 resource information taken from: https://www.youtube.com/watch?v=Lddegb2ToNY
 
+## Notion
+Duck typing - is another way to achive polymorphism besides Inheritance. Object must have the minimum neccessary attributes/methods a.k.a. (`If it walks like a duck, if it quaks like a duck, it must be a duck`)
+
 # Dynamic / Static typing
 - Python is `dynamically` typed language - meaning:
     - types are checked at `runtime`
