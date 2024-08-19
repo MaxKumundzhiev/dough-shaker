@@ -13,5 +13,24 @@
 """
 
 
-def max_parking_spots():
-    ...
+def is_parking_full(cars, n):
+    """Необходимо определить, был ли момент, в который были заняты все парковочные места."""
+    events = []
+
+    for car in cars:
+        timein, timeout, placefrom, placeto = car
+        events.append((timein, 1, placeto - placefrom + 1))
+        events.append((timeout, -1, placeto - placefrom + 1))
+    
+    events.sort()
+    occupied = 0
+
+    for _, event in enumerate(events):
+        if event[1] == -1:
+            occupied -= event[2]
+        elif event[1] == 1:
+            occupied += event[2]
+        if occupied == n:
+            return True
+    return False
+
