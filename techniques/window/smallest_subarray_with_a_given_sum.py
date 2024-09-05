@@ -7,6 +7,10 @@ find the length of the smallest contiguous subarray whose sum is greater than or
 Return 0 if no such subarray exists.
 
 array = 1, 2, 3, 4, 5, 6  | s = 4
+
+1 2 3 4 5 6
+|
+    |
         
 """
 
